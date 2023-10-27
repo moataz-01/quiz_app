@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="quiz-container">
+      <h1>Quiz</h1>
+      <div id="question-container">
+        <p id="question"></p>
+        <div id="options-container">
+          <input type="radio" name="option" id="option1" />
+          <label for="option1" id="option1-label"></label><br />
+          <input type="radio" name="option" id="option2" />
+          <label for="option2" id="option2-label"></label><br />
+          <input type="radio" name="option" id="option3" />
+          <label for="option3" id="option3-label"></label><br />
+          <input type="radio" name="option" id="option4" />
+          <label for="option4" id="option4-label"></label><br />
+        </div>
+      </div>
+      <button id="next-button">Next</button>
+      <div id="result-container">
+        <h2 id="result"></h2>
+        <div id="gif"
+          style="
+            width: 50%;
+            height: 0;
+            padding-bottom: 56%;
+            position: relative;
+          "
+        >
+          <iframe
+            src="https://giphy.com/embed/YVmL3uMI8IobhU6KD7"
+            width="100%"
+            height="100%"
+            style="position: absolute"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
